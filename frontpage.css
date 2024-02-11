@@ -1,0 +1,433 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset default styles and set global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling for the main section */
+section {
+    position: relative;
+    inline-size: 100%;
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    animation: transoutbg 0.5s forwards;
+    transition: 0.6s ease-out;
+    overflow-x: hidden;
+}
+
+
+#home {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('images/homemargin.jpg');
+  animation: transinbg 0.5s;
+      }
+
+#desc {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('images/descriptionpage.jpg');
+  animation: transinbg 0.5s;
+      }
+
+#about {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('images/aboutpage.jpg');
+  animation: transinbg 0.5s;
+      }
+
+
+/* Styling for the header section */
+header {
+    position: sticky;
+    inset-block-start: 0;
+    inline-size: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+/* Styling for the logo in the header */
+header .logo {
+    position: relative;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    
+}
+
+/* Styling for navigation links in the header */
+header .navigation a {
+    color: lightblue;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+/* Styling for non-last child navigation links */
+header .navigation a:not(:last-child) {
+    margin-inline-end: 30px;
+    color: lightblue;
+}
+
+/* Hover effect for navigation links */
+header .navigation a:hover {
+    background: #0C4F60;
+}
+
+/* Styling for the "Discover Your Path" button */
+header .navigation .info-btn {
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.9);
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+    box-shadow: 0px 5px rgb(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+/* Sticky navigation tab styling */
+.navtab {
+  position: sticky;
+  background-color: none;
+  color: lightblue;
+  border-radius: 20px;
+  padding-top: 20px;
+  width: 200%;
+  padding: 10px;
+}
+
+/* Additional styling for the logo in the header */
+header .logo {
+    position: absolute;
+    float: left;
+    color: lightblue;
+    text-shadow: 0px 5px rgb(0, 0, 0, 0.3);
+    padding-left: 10px;
+    background-color: none;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Styling for the navigation section in the header */
+header .navigation {
+    float: right;
+    color: lightblue;
+    text-shadow: 0px 5px rgb(0, 0, 0, 0.3);
+}
+
+/* Styling for the responsive navigation */
+.nav {
+    left: 100%;
+    right: 0%;
+}
+
+/* Styling for the main content section */
+.content {
+    
+    max-inline-size: 650px;
+    margin: 60px 100px;
+    animation: transin 1s;
+}
+
+/* Styling for the main heading in the content */
+.content .info h2 {
+    color: #DADBDD ;
+    text-shadow: 0px 5px rgb(0, 0, 0, 0.9);
+    font-size: 38px;
+    width: 100%;
+    margin-top: 0%;
+    min-width: max-content;
+    height: 10%x;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-block-end: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: pre;
+    border-bottom: 1px solid white;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+}
+
+/* Styling for a span within the main heading */
+.content .info h2 span {
+    color: #DADBDD ;
+    text-shadow: 0px 5px #000;
+    font-size: 50px;
+    font-weight: 600;
+    width: 200px;
+}
+
+/* Styling for paragraphs in the content */
+.content .info p {
+    position: relative;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.9);
+    -webkit-text-stroke: #226A80;
+    -webkit-text-stroke-width: 0.5px;
+    margin-top: -30px;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-block-end: 40px;
+    color: #fff;
+    background-color: rgba(0, 128, 128, 0.4 );
+    
+  }
+
+/* Styling for the "Discover Your Path" button in the content */
+.content .info-btn {
+    color: #fff;
+    background: #226A80;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.9);
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+    box-shadow: 0px 5px rgb(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+/* Hover effect for the "Discover Your Path" button in the content */
+.content .info-btn:hover {
+    background: #0C4F60;
+    box-shadow: 0px 1px rgba(68, 117, 252, 0.8);
+    }
+
+/* Styling for media icons section */
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Styling for media icon links */
+.media-icons a {
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+/* Styling for non-last child media icon links */
+.media-icons a:not(:last-child) {
+    margin-inline-end: 60px;
+}
+
+/* Hover effect for media icon links */
+.media-icons a:hover {
+    transform: scale(1.5);
+}
+
+/* Hide label by default */
+label {
+    display: none;
+}
+
+/* Styling for the checkbox */
+#check {
+    z-index: 3;
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-inline-size: 960px) {
+    /* Hide navigation for smaller screens */
+    header .navigation {
+        display: none;
+    }
+
+    /* Styling for the label and checkbox */
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+
+    /* Hover effect for the label */
+    label:hover {
+        color: #fff;
+    }
+
+    /* Styling for the close button in the label */
+    label .close-btn {
+        display: none;
+    }
+
+    /* Styling for the navigation when checkbox is checked */
+    #check:checked ~ header .navigation {
+        z-index: 2;
+        position: fixed;
+        background: rgba(114, 223, 255, 0.9);
+        inset-block-start: 0;
+        inset-block-end: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling for navigation links when checkbox is checked */
+    #check:checked ~ header .navigation a {
+        font-weight: 700;
+        margin-inline-end: 0;
+        margin-block-end: 50px;
+        letter-spacing: 2px;
+    }
+
+    /* Hide menu button when checkbox is checked */
+    #check:checked ~ header label .menu-btn {
+        display: none;
+    }
+
+    /* Styling for the close button when checkbox is checked */
+    #check:checked ~ header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    /* Styling for the menu button in the label */
+    label .menu-btn {
+        position: absolute;
+    }
+
+    /* Adjust logo position in the header */
+    header .logo {
+        position: absolute;
+        inset-block-end: -6px;
+    }
+
+    /* Responsive styles for the main heading in the content */
+    .content .info h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    /* Responsive styles for the span within the main heading */
+    .content .info h2 span {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    /* Responsive styles for paragraphs in the content */
+    .content .info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-inline-size: 560px) {
+    /* Further responsive styles for the main heading in the content */
+    .content .info h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    /* Further responsive styles for the span within the main heading */
+    .content .info h2 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    /* Further responsive styles for paragraphs in the content */
+    .content .info p {
+        font-size: 14px;
+    }
+}
+
+/* Keyframes for transin animation */
+.transin {
+    animation: transin 1s;
+}
+
+/* Keyframes for transout animation */
+.transout {
+    animation: transout 1s;
+}
+
+/* Keyframes for transin animation */
+@keyframes transin {
+    from {
+      background-color: none;
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+/* Keyframes for transout animation */
+@keyframes transout {
+    from {
+        left: calc(50% - 300px);
+        opacity: 100%;
+    }
+    to {
+        opacity: -10%;
+    }
+  }
+
+@keyframes transoutbg {
+    
+
+    0% {
+      background-color: rgb(0, 0, 0, 0.5);
+              
+    }
+    100% {
+      background-color: rgb(0, 0, 0, 0);
+            }
+}
